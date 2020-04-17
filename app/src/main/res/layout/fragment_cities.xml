@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextLat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:digits="0123456789.-"
+        android:hint="@string/lat"
+        android:inputType="number|numberSigned|numberDecimal"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/editTextLng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextLat"
+        android:layout_margin="8dp"
+        android:digits="0123456789.-"
+        android:hint="@string/lng"
+        android:inputType="number|numberSigned|numberDecimal"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextLng"
+        android:layout_margin="8dp"
+        android:text="@string/sned" />
+
+    <TextView
+        android:id="@+id/texViewMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonSend"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCities"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonSend"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_city" />
+
+</RelativeLayout>

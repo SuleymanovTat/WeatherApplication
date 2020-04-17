@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Погода</string>
+    <string name="no_internet_connection">Отсутствует подключение к интернету</string>
+    <string name="server_error">Ошибка сервера</string>
+    <string name="unknown_error_has_occurred">Произошла неизвестная ошибка</string>
+    <string name="impossible_parse_answer">Невозможно разобрать ответ сервера</string>
+    <string name="сould_not_find">Не удалось найти</string>
+    <string name="lat">Широта </string>
+    <string name="lng">Долгота</string>
+    <string name="sned">Отправить</string>
+    <string name="enter_the_correct_latitude">Введите корректный широту</string>
+    <string name="enter_the_correct_longitude">Введите корректный долготу</string>
+    <string name="invalid_latitude_or_longitude">Некорректный широта или долгота</string>
+    <string name="celsius">Температура %1$s °С</string>
+    <string name="description">Описания: %1$s</string>
+</resources>
